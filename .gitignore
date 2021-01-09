@@ -1,0 +1,7 @@
+jellyfin_docker/cache
+jellyfin_docker/config
+jellyfin_docker/media
+
+# jellyfin_docker/config/config
+# jellyfin_docker/config/log
+# jellyfin_docker/config/transcodes
