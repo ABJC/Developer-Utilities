@@ -15,3 +15,6 @@ There will be 5 different test footage videos (just the one for know):
 - [Test Footage 05 - Description]()
 
 ### Video & Audio Codecs -->
+
+
+docker run -d --volume ./config:/config --volume ./cache:/cache --volume ./media:/media --user 1000:1000 --net=host -p 8096:8096  --restart=unless-stopped jellyfin/jellyfin 

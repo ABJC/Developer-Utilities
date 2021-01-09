@@ -1,13 +1,21 @@
-version: "3.5"
+version: "2"
 services:
   jellyfin:
-    image: jellyfin/jellyfin
+    image: linuxserver/jellyfin
     container_name: jellyfin
     network_mode: "host"
     volumes:
       - ./config:/config
       - ./cache:/cache
       - ./media:/media
+      - ./media2:/media2:ro
     ports:
-      - 8096:8096
+      - 8096:8096     # HTTP WebGUI
+      # - 8920:8920     # HTTPS WebGUI
+      # - 7359:7359/udp # UDP Broadcast
+      # - 1900:1900/udp # DLNA Service Discovery
+    environment:
+      - PUID=1000         # UserID 
+      - PGID=1000         # GroupID  
+      - TZ=Europe/Berlin  # Timezone
     restart: "unless-stopped"
