@@ -1,0 +1,60 @@
+[2021-09-06 23:36:48.331 +02:00] [INF] [1] Main: Jellyfin version: "10.7.6"
+[2021-09-06 23:36:48.349 +02:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2021-09-06 23:36:48.351 +02:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg", "--webdir=/usr/share/jellyfin/web"]
+[2021-09-06 23:36:48.352 +02:00] [INF] [1] Main: Operating system: "Linux"
+[2021-09-06 23:36:48.352 +02:00] [INF] [1] Main: Architecture: X64
+[2021-09-06 23:36:48.352 +02:00] [INF] [1] Main: 64-Bit Process: True
+[2021-09-06 23:36:48.352 +02:00] [INF] [1] Main: User Interactive: True
+[2021-09-06 23:36:48.352 +02:00] [INF] [1] Main: Processor count: 12
+[2021-09-06 23:36:48.352 +02:00] [INF] [1] Main: Program data path: "/config/data"
+[2021-09-06 23:36:48.352 +02:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2021-09-06 23:36:48.352 +02:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2021-09-06 23:36:48.502 +02:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2021-09-06 23:36:48.533 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-06 23:36:48.533 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2021-09-06 23:36:48.534 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-06 23:36:48.538 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2021-09-06 23:36:48.538 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2021-09-06 23:36:48.553 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2021-09-06 23:36:49.516 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.7.6.0"
+[2021-09-06 23:36:49.516 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.7.6.0"
+[2021-09-06 23:36:49.516 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.7.6.0"
+[2021-09-06 23:36:49.564 +02:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2021-09-06 23:36:49.754 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2021-09-06 23:36:49.754 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2021-09-06 23:36:49.760 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {f83afcd0-2b68-4e5f-857e-a23099b20693} may be persisted to storage in unencrypted form.
+[2021-09-06 23:36:49.779 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2021-09-06 23:36:49.800 +02:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 09/07/2021 02:00, which is 2:23:10.1997371 from now.
+[2021-09-06 23:36:49.916 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "4.3.1"
+[2021-09-06 23:36:49.938 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8_cuvid", "vp8_qsv", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "flac", "mp3"]
+[2021-09-06 23:36:49.945 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "ac3", "flac", "libmp3lame", "libopus", "libvorbis", "srt"]
+[2021-09-06 23:36:49.952 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["vdpau", "cuda", "vaapi", "qsv", "drm", "opencl"]
+[2021-09-06 23:36:49.953 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: SetByArgument: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2021-09-06 23:36:49.953 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "06ea9338fc5e4786a65ba490615cbbc1"
+[2021-09-06 23:36:50.016 +02:00] [INF] [1] Emby.Dlna.Main.DlnaEntryPoint: Registering publisher for "urn:schemas-upnp-org:device:MediaServer:1" on "172.18.0.2/16"
+[2021-09-06 23:36:50.027 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.0678861
+[2021-09-06 23:36:50.027 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2021-09-06 23:36:50.135 +02:00] [INF] [4] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/movies
+[2021-09-06 23:36:50.135 +02:00] [INF] [17] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/shows
+[2021-09-06 23:36:50.138 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.1103887
+[2021-09-06 23:36:50.138 +02:00] [INF] [1] Main: Startup complete 0:00:01.9123732
+[2021-09-06 23:36:52.823 +02:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2021-09-06 23:36:52.824 +02:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2021-09-06 23:36:52.827 +02:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2021-09-06 23:36:54.120 +02:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2021-09-06 23:36:54.153 +02:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-06 23:37:49.824 +02:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Scan Media Library"
+[2021-09-06 23:37:49.824 +02:00] [INF] [29] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Update Plugins"
+[2021-09-06 23:37:49.824 +02:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2021-09-06 23:37:49.824 +02:00] [INF] [29] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2021-09-06 23:37:49.824 +02:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2021-09-06 23:37:49.825 +02:00] [INF] [30] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2021-09-06 23:37:49.826 +02:00] [INF] [28] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/movies"
+[2021-09-06 23:37:49.826 +02:00] [INF] [28] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/shows"
+[2021-09-06 23:37:49.827 +02:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2021-09-06 23:37:50.026 +02:00] [INF] [29] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2021-09-06 23:37:50.026 +02:00] [INF] [31] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/shows
+[2021-09-06 23:37:50.027 +02:00] [INF] [34] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/movies
+[2021-09-06 23:37:50.027 +02:00] [INF] [29] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-06 23:37:50.571 +02:00] [INF] [35] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2021-09-06 23:37:50.572 +02:00] [INF] [35] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
