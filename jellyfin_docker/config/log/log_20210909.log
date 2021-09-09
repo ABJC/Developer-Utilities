@@ -1,0 +1,806 @@
+[2021-09-09 12:49:34.720 +02:00] [INF] [1] Main: Jellyfin version: "10.7.6"
+[2021-09-09 12:49:34.737 +02:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CONFIG_DIR, /config]"]
+[2021-09-09 12:49:34.739 +02:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg", "--webdir=/usr/share/jellyfin/web"]
+[2021-09-09 12:49:34.740 +02:00] [INF] [1] Main: Operating system: "Linux"
+[2021-09-09 12:49:34.740 +02:00] [INF] [1] Main: Architecture: X64
+[2021-09-09 12:49:34.740 +02:00] [INF] [1] Main: 64-Bit Process: True
+[2021-09-09 12:49:34.740 +02:00] [INF] [1] Main: User Interactive: True
+[2021-09-09 12:49:34.740 +02:00] [INF] [1] Main: Processor count: 12
+[2021-09-09 12:49:34.740 +02:00] [INF] [1] Main: Program data path: "/config/data"
+[2021-09-09 12:49:34.740 +02:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2021-09-09 12:49:34.740 +02:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2021-09-09 12:49:34.888 +02:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2021-09-09 12:49:34.918 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-09 12:49:34.918 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2021-09-09 12:49:34.919 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-09 12:49:34.923 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2021-09-09 12:49:34.923 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2021-09-09 12:49:34.938 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2021-09-09 12:49:35.875 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.7.6.0"
+[2021-09-09 12:49:35.875 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.7.6.0"
+[2021-09-09 12:49:35.875 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.7.6.0"
+[2021-09-09 12:49:35.922 +02:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2021-09-09 12:49:36.105 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2021-09-09 12:49:36.105 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2021-09-09 12:49:36.111 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {0898842f-4786-47df-9b00-e5c4b12b61b4} may be persisted to storage in unencrypted form.
+[2021-09-09 12:49:36.130 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2021-09-09 12:49:36.171 +02:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 09/10/2021 02:00, which is 13:10:23.8290355 from now.
+[2021-09-09 12:49:36.264 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "4.3.1"
+[2021-09-09 12:49:36.285 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8_cuvid", "vp8_qsv", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "flac", "mp3"]
+[2021-09-09 12:49:36.293 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "ac3", "flac", "libmp3lame", "libopus", "libvorbis", "srt"]
+[2021-09-09 12:49:36.300 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["vdpau", "cuda", "vaapi", "qsv", "drm", "opencl"]
+[2021-09-09 12:49:36.300 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: SetByArgument: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2021-09-09 12:49:36.301 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "06ea9338fc5e4786a65ba490615cbbc1"
+[2021-09-09 12:49:36.362 +02:00] [INF] [1] Emby.Dlna.Main.DlnaEntryPoint: Registering publisher for "urn:schemas-upnp-org:device:MediaServer:1" on "172.18.0.2/16"
+[2021-09-09 12:49:36.372 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.0656506
+[2021-09-09 12:49:36.372 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2021-09-09 12:49:36.476 +02:00] [INF] [18] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/movies
+[2021-09-09 12:49:36.476 +02:00] [INF] [17] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/shows
+[2021-09-09 12:49:36.479 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.106863
+[2021-09-09 12:49:36.479 +02:00] [INF] [1] Main: Startup complete 0:00:01.863739
+[2021-09-09 12:49:39.174 +02:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2021-09-09 12:49:39.175 +02:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2021-09-09 12:49:39.178 +02:00] [INF] [4] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2021-09-09 12:49:39.897 +02:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2021-09-09 12:49:39.930 +02:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 12:50:36.174 +02:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Scan Media Library"
+[2021-09-09 12:50:36.175 +02:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2021-09-09 12:50:36.175 +02:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2021-09-09 12:50:36.177 +02:00] [INF] [28] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/shows"
+[2021-09-09 12:50:36.177 +02:00] [INF] [28] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/movies"
+[2021-09-09 12:50:36.178 +02:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2021-09-09 12:50:36.323 +02:00] [INF] [30] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/8927eb646b144a9a8133fa9f29723628.png"
+[2021-09-09 12:50:36.348 +02:00] [INF] [29] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/1d642afed9904422946446a19aef631e.png"
+[2021-09-09 12:50:36.639 +02:00] [INF] [29] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/1d642afed9904422946446a19aef631e.png"
+[2021-09-09 12:50:36.726 +02:00] [INF] [30] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/8927eb646b144a9a8133fa9f29723628.png"
+[2021-09-09 12:50:36.779 +02:00] [INF] [30] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "jellyfish-3-mbps-hd-h264", Path: "/media/shows/H264/jellyfish-3-mbps-hd-h264.mkv", Id: 5e03a7ff-aa0e-0b7e-ceb3-666ffa327333
+[2021-09-09 12:50:36.779 +02:00] [INF] [29] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "jellyfish-3-mbps-hd-hevc", Path: "/media/shows/HEVC/jellyfish-3-mbps-hd-hevc.mkv", Id: 77d281f1-f6f9-2a73-7c1f-c497cac6cb51
+[2021-09-09 12:50:36.779 +02:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "jellyfish-3-mbps-hd-hevc-10bit", Path: "/media/shows/10-Bit/jellyfish-3-mbps-hd-hevc-10bit.mkv", Id: c1d51596-6aaa-0123-abbb-2d0afdd78d01
+[2021-09-09 12:50:36.786 +02:00] [INF] [30] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "jellyfish-5-mbps-hd-h264", Path: "/media/shows/H264/jellyfish-5-mbps-hd-h264.mkv", Id: 344f8c73-2ac8-d252-9914-93f6e728a9f1
+[2021-09-09 12:50:36.792 +02:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "jellyfish-10-mbps-hd-hevc-10bit", Path: "/media/shows/10-Bit/jellyfish-10-mbps-hd-hevc-10bit.mkv", Id: af91050d-f98c-f5d9-e1bb-f269933287bc
+[2021-09-09 12:50:36.798 +02:00] [INF] [29] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "jellyfish-5-mbps-hd-hevc", Path: "/media/shows/HEVC/jellyfish-5-mbps-hd-hevc.mkv", Id: d2930064-b2a1-11c3-26df-e846eae87f76
+[2021-09-09 12:50:36.804 +02:00] [INF] [30] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "jellyfish-10-mbps-hd-h264", Path: "/media/shows/H264/jellyfish-10-mbps-hd-h264.mkv", Id: 30a72675-10d8-6cbf-21fb-63615ab884d8
+[2021-09-09 12:50:36.817 +02:00] [INF] [29] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "jellyfish-10-mbps-hd-hevc", Path: "/media/shows/HEVC/jellyfish-10-mbps-hd-hevc.mkv", Id: ac993946-59ef-ddd8-8b3e-09c0fad68345
+[2021-09-09 12:50:36.905 +02:00] [INF] [33] MediaBrowser.Providers.TV.SeriesMetadataService: Removing virtual season 1 in series "HEVC"
+[2021-09-09 12:50:36.905 +02:00] [INF] [28] MediaBrowser.Providers.TV.SeriesMetadataService: Removing virtual season 1 in series "H264"
+[2021-09-09 12:50:36.905 +02:00] [INF] [30] MediaBrowser.Providers.TV.SeriesMetadataService: Removing virtual season 1 in series "10-Bit"
+[2021-09-09 12:50:36.905 +02:00] [INF] [33] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Season", Name: "Season 1", Path: "", Id: 1c4102ea-b5a8-f72b-b7cf-0f9af9101e74
+[2021-09-09 12:50:36.905 +02:00] [INF] [30] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Season", Name: "Season 1", Path: "", Id: 81ba30fe-c2b5-b465-3ef1-fe2e75ecaa02
+[2021-09-09 12:50:36.905 +02:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Season", Name: "Season 1", Path: "", Id: ddee1c96-f53e-8e39-4e9a-b52ca6dacebe
+[2021-09-09 12:50:37.376 +02:00] [ERR] [30] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/H264/Season 01/folder.jpg" is denied. Will retry saving to "/config/data/metadata/library/8a/8a02d8075a830b44ed26d282d8130d6d/poster.jpg"
+[2021-09-09 12:50:37.466 +02:00] [ERR] [35] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/HEVC/Season 01/folder.jpg" is denied. Will retry saving to "/config/data/metadata/library/82/82668bee065b085760b8c7876f26cc5e/poster.jpg"
+[2021-09-09 12:50:37.545 +02:00] [ERR] [33] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/H264/Season 02/folder.jpg" is denied. Will retry saving to "/config/data/metadata/library/85/85549a325b513e9723943b729ee4f833/poster.jpg"
+[2021-09-09 12:50:37.904 +02:00] [ERR] [30] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/HEVC/Season 02/folder.jpg" is denied. Will retry saving to "/config/data/metadata/library/e4/e44cee3abdaee47535d4047ab9d87b1f/poster.jpg"
+[2021-09-09 12:50:38.538 +02:00] [ERR] [30] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/H264/Season 01/metadata/jellyfish-10-mbps-hd-h264.jpg" is denied. Will retry saving to "/config/data/metadata/library/6f/6fc4be66d970beabfc03677a83ef18b3/poster.jpg"
+[2021-09-09 12:50:39.339 +02:00] [ERR] [31] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/HEVC/Season 01/metadata/jellyfish-10-mbps-hd-hevc.jpg" is denied. Will retry saving to "/config/data/metadata/library/72/72d8867cfe5c33b06f71bf8cb5504f76/poster.jpg"
+[2021-09-09 12:50:39.703 +02:00] [ERR] [28] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/10-Bit/Season 01/metadata/jellyfish-10-mbps-hd-hevc-10bit.jpg" is denied. Will retry saving to "/config/data/metadata/library/75/75eb2ea23fb915e4a4a7dfc6abd8f469/poster.jpg"
+[2021-09-09 12:50:39.838 +02:00] [ERR] [31] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/H264/Season 01/metadata/jellyfish-5-mbps-hd-h264.jpg" is denied. Will retry saving to "/config/data/metadata/library/38/389c45739d2794e8c54eb01dcc02e13c/poster.jpg"
+[2021-09-09 12:50:40.399 +02:00] [ERR] [36] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/HEVC/Season 01/metadata/jellyfish-3-mbps-hd-hevc.jpg" is denied. Will retry saving to "/config/data/metadata/library/5b/5b87952457b7c0c1edcaf88580912932/poster.jpg"
+[2021-09-09 12:50:40.914 +02:00] [ERR] [28] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/H264/Season 02/metadata/jellyfish-3-mbps-hd-h264.jpg" is denied. Will retry saving to "/config/data/metadata/library/8c/8c6521c5ed80826334180d0d91d96d2d/poster.jpg"
+[2021-09-09 12:50:41.513 +02:00] [ERR] [36] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/10-Bit/Season 01/metadata/jellyfish-3-mbps-hd-hevc-10bit.jpg" is denied. Will retry saving to "/config/data/metadata/library/3a/3a505e6c8d496ac2f7f4621322939678/poster.jpg"
+[2021-09-09 12:50:41.581 +02:00] [ERR] [28] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/HEVC/Season 01/metadata/jellyfish-5-mbps-hd-hevc.jpg" is denied. Will retry saving to "/config/data/metadata/library/59/59c1474d6d78e339e2d68bc2268894b5/poster.jpg"
+[2021-09-09 12:50:42.451 +02:00] [ERR] [34] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/HEVC/Season 02/metadata/jellyfish-10-mbps-hd-hevc.jpg" is denied. Will retry saving to "/config/data/metadata/library/a6/a6dd6c4a89b8a69cab41604c9e0116e5/poster.jpg"
+[2021-09-09 12:50:43.160 +02:00] [ERR] [33] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/HEVC/Season 02/metadata/jellyfish-3-mbps-hd-hevc.jpg" is denied. Will retry saving to "/config/data/metadata/library/0b/0b0a212ac17334e2048676cc6d6bd68e/poster.jpg"
+[2021-09-09 12:50:43.920 +02:00] [ERR] [36] MediaBrowser.Providers.Manager.ProviderManager: UnauthorizedAccessException - Access to path "/media/shows/HEVC/Season 02/metadata/jellyfish-5-mbps-hd-hevc.jpg" is denied. Will retry saving to "/config/data/metadata/library/f5/f542809f6b9e9ba1dfcbb57cc3ec58b7/poster.jpg"
+[2021-09-09 12:50:43.961 +02:00] [INF] [28] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/8afced86215e4b45bf31acee0e319b4d.png"
+[2021-09-09 12:50:44.380 +02:00] [INF] [28] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/8afced86215e4b45bf31acee0e319b4d.png"
+[2021-09-09 12:50:44.408 +02:00] [INF] [26] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/d89c25b9906142778f5c8616417a11f3.png"
+[2021-09-09 12:50:44.818 +02:00] [INF] [26] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/d89c25b9906142778f5c8616417a11f3.png"
+[2021-09-09 12:50:44.845 +02:00] [INF] [26] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/df5760b2302a43819e8caefb33f5db6d.png"
+[2021-09-09 12:50:45.170 +02:00] [INF] [26] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/df5760b2302a43819e8caefb33f5db6d.png"
+[2021-09-09 12:50:45.196 +02:00] [INF] [26] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/4d3c4ad49f714473ab3caedd13223036.png"
+[2021-09-09 12:50:45.503 +02:00] [INF] [26] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/4d3c4ad49f714473ab3caedd13223036.png"
+[2021-09-09 12:50:45.538 +02:00] [INF] [27] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/209664b5f8d7416c9f8dd4e4349c505f.png"
+[2021-09-09 12:50:45.764 +02:00] [INF] [27] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/209664b5f8d7416c9f8dd4e4349c505f.png"
+[2021-09-09 12:50:45.786 +02:00] [INF] [27] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/bb7a074cb81d4ae2badfb21b12caed8b.png"
+[2021-09-09 12:50:46.143 +02:00] [INF] [27] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/bb7a074cb81d4ae2badfb21b12caed8b.png"
+[2021-09-09 12:50:48.442 +02:00] [INF] [32] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 12 seconds
+[2021-09-09 12:50:48.442 +02:00] [INF] [32] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 12:50:48.461 +02:00] [INF] [29] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/movies
+[2021-09-09 12:50:48.461 +02:00] [INF] [31] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/shows
+[2021-09-09 12:57:16.818 +02:00] [INF] [116] Jellyfin.Api.Controllers.MediaInfoController: GetPostedPlaybackInfo profile: null
+[2021-09-09 13:04:12.478 +02:00] [INF] [205] Jellyfin.Api.Controllers.MediaInfoController: GetPostedPlaybackInfo profile: null
+[2021-09-09 13:16:39.799 +02:00] [INF] [109] Jellyfin.Api.Controllers.MediaInfoController: GetPostedPlaybackInfo profile: null
+[2021-09-09 13:17:10.447 +02:00] [INF] [101] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "ABJC" "1.0.0" playing "Jellyfish 5MBPS HD HEVC". Stopped at "0" ms
+[2021-09-09 13:17:12.914 +02:00] [INF] [101] Jellyfin.Api.Controllers.MediaInfoController: GetPostedPlaybackInfo profile: null
+[2021-09-09 13:19:40.548 +02:00] [INF] [140] Jellyfin.Api.Controllers.MediaInfoController: GetPostedPlaybackInfo profile: null
+[2021-09-09 13:26:40.196 +02:00] [INF] [142] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "ABJC" "1.0.0" playing "Jellyfish 5MBPS HD HEVC". Stopped at "30000" ms
+[2021-09-09 13:36:55.890 +02:00] [INF] [73] Jellyfin.Api.Controllers.MediaInfoController: GetPostedPlaybackInfo profile: null
+[2021-09-09 13:38:04.366 +02:00] [INF] [57] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "ABJC" "1.0.0" playing "Jellyfish 5MBPS HD HEVC". Stopped at "0" ms
+[2021-09-09 13:38:07.177 +02:00] [INF] [60] Jellyfin.Api.Controllers.MediaInfoController: GetPostedPlaybackInfo profile: null
+[2021-09-09 13:38:18.114 +02:00] [INF] [63] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "ABJC" "1.0.0" playing "Jellyfish 5MBPS HD H264". Stopped at "0" ms
+[2021-09-09 13:46:55.989 +02:00] [INF] [117] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "ABJC" "1.0.0" playing "Jellyfish 5MBPS HD H264". Stopped at "30000" ms
+[2021-09-09 15:15:30.574 +02:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2021-09-09 15:15:30.576 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2021-09-09 15:15:30.576 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2021-09-09 15:15:30.577 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-09-09 15:15:30.577 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2021-09-09 15:15:30.577 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2021-09-09 15:15:30.577 +02:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2021-09-09 15:15:30.579 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2021-09-09 15:15:30.579 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2021-09-09 15:15:30.580 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2021-09-09 15:15:30.581 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2021-09-09 15:15:30.581 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2021-09-09 15:15:30.581 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpDevicePublisher
+[2021-09-09 15:15:30.685 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2021-09-09 15:15:30.685 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2021-09-09 15:15:30.685 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2021-09-09 15:15:30.686 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2021-09-09 15:15:30.686 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 2 sendSockets
+[2021-09-09 15:15:30.686 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2021-09-09 15:15:30.686 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "172.18.0.2"
+[2021-09-09 15:15:30.686 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2021-09-09 15:15:30.687 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-09-09 15:15:30.687 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"
+[2021-09-09 15:18:12.320 +02:00] [INF] [1] Main: Jellyfin version: "10.7.6"
+[2021-09-09 15:18:12.332 +02:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2021-09-09 15:18:12.334 +02:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg", "--webdir=/usr/share/jellyfin/web"]
+[2021-09-09 15:18:12.334 +02:00] [INF] [1] Main: Operating system: "Linux"
+[2021-09-09 15:18:12.334 +02:00] [INF] [1] Main: Architecture: X64
+[2021-09-09 15:18:12.335 +02:00] [INF] [1] Main: 64-Bit Process: True
+[2021-09-09 15:18:12.335 +02:00] [INF] [1] Main: User Interactive: True
+[2021-09-09 15:18:12.335 +02:00] [INF] [1] Main: Processor count: 12
+[2021-09-09 15:18:12.335 +02:00] [INF] [1] Main: Program data path: "/config/data"
+[2021-09-09 15:18:12.335 +02:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2021-09-09 15:18:12.335 +02:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2021-09-09 15:18:12.438 +02:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2021-09-09 15:18:12.464 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-09 15:18:12.464 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2021-09-09 15:18:12.465 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-09 15:18:12.469 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2021-09-09 15:18:12.469 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2021-09-09 15:18:12.480 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2021-09-09 15:18:13.370 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.7.6.0"
+[2021-09-09 15:18:13.371 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.7.6.0"
+[2021-09-09 15:18:13.371 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.7.6.0"
+[2021-09-09 15:18:13.411 +02:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2021-09-09 15:18:13.591 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2021-09-09 15:18:13.591 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2021-09-09 15:18:13.597 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {c531d348-420c-4330-9266-473ac451487d} may be persisted to storage in unencrypted form.
+[2021-09-09 15:18:13.615 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2021-09-09 15:18:13.656 +02:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 09/10/2021 02:00, which is 10:41:46.3437374 from now.
+[2021-09-09 15:18:13.683 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "4.3.1"
+[2021-09-09 15:18:13.696 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8_cuvid", "vp8_qsv", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "flac", "mp3"]
+[2021-09-09 15:18:13.703 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "ac3", "flac", "libmp3lame", "libopus", "libvorbis", "srt"]
+[2021-09-09 15:18:13.708 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["vdpau", "cuda", "vaapi", "qsv", "drm", "opencl"]
+[2021-09-09 15:18:13.709 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: SetByArgument: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2021-09-09 15:18:13.709 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "06ea9338fc5e4786a65ba490615cbbc1"
+[2021-09-09 15:18:13.767 +02:00] [INF] [1] Emby.Dlna.Main.DlnaEntryPoint: Registering publisher for "urn:schemas-upnp-org:device:MediaServer:1" on "172.18.0.2/16"
+[2021-09-09 15:18:13.778 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.0626306
+[2021-09-09 15:18:13.778 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2021-09-09 15:18:13.885 +02:00] [INF] [18] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/movies
+[2021-09-09 15:18:13.885 +02:00] [INF] [11] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/shows
+[2021-09-09 15:18:13.888 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.1095792
+[2021-09-09 15:18:13.888 +02:00] [INF] [1] Main: Startup complete 0:00:01.6536176
+[2021-09-09 15:18:16.659 +02:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2021-09-09 15:18:16.660 +02:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2021-09-09 15:18:16.663 +02:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2021-09-09 15:18:17.442 +02:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2021-09-09 15:18:17.472 +02:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 15:18:40.723 +02:00] [INF] [15] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.178.38" request
+[2021-09-09 15:19:17.999 +02:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2021-09-09 15:19:18.000 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2021-09-09 15:19:18.001 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2021-09-09 15:19:18.001 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-09-09 15:19:18.001 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2021-09-09 15:19:18.001 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2021-09-09 15:19:18.001 +02:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2021-09-09 15:19:18.003 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2021-09-09 15:19:18.004 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2021-09-09 15:19:18.005 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2021-09-09 15:19:18.005 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2021-09-09 15:19:18.005 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2021-09-09 15:19:18.006 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpDevicePublisher
+[2021-09-09 15:19:18.109 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2021-09-09 15:19:18.110 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2021-09-09 15:19:18.110 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2021-09-09 15:19:18.111 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2021-09-09 15:19:18.112 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 2 sendSockets
+[2021-09-09 15:19:18.112 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2021-09-09 15:19:18.112 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "172.18.0.2"
+[2021-09-09 15:19:18.112 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2021-09-09 15:19:18.114 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-09-09 15:19:18.114 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"
+[2021-09-09 15:23:07.860 +02:00] [INF] [1] Main: Jellyfin version: "10.7.6"
+[2021-09-09 15:23:07.872 +02:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2021-09-09 15:23:07.874 +02:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg", "--webdir=/usr/share/jellyfin/web"]
+[2021-09-09 15:23:07.875 +02:00] [INF] [1] Main: Operating system: "Linux"
+[2021-09-09 15:23:07.875 +02:00] [INF] [1] Main: Architecture: X64
+[2021-09-09 15:23:07.875 +02:00] [INF] [1] Main: 64-Bit Process: True
+[2021-09-09 15:23:07.875 +02:00] [INF] [1] Main: User Interactive: True
+[2021-09-09 15:23:07.875 +02:00] [INF] [1] Main: Processor count: 12
+[2021-09-09 15:23:07.875 +02:00] [INF] [1] Main: Program data path: "/config/data"
+[2021-09-09 15:23:07.875 +02:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2021-09-09 15:23:07.875 +02:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2021-09-09 15:23:07.976 +02:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2021-09-09 15:23:08.002 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-09 15:23:08.002 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2021-09-09 15:23:08.003 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-09 15:23:08.007 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2021-09-09 15:23:08.007 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2021-09-09 15:23:08.018 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2021-09-09 15:23:08.889 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.7.6.0"
+[2021-09-09 15:23:08.890 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.7.6.0"
+[2021-09-09 15:23:08.890 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.7.6.0"
+[2021-09-09 15:23:08.929 +02:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2021-09-09 15:23:09.106 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2021-09-09 15:23:09.106 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2021-09-09 15:23:09.112 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {093df446-9de3-49e5-a1be-156e97c2f542} may be persisted to storage in unencrypted form.
+[2021-09-09 15:23:09.129 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2021-09-09 15:23:09.169 +02:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 09/10/2021 02:00, which is 10:36:50.8301196 from now.
+[2021-09-09 15:23:09.197 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "4.3.1"
+[2021-09-09 15:23:09.210 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8_cuvid", "vp8_qsv", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "flac", "mp3"]
+[2021-09-09 15:23:09.218 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "ac3", "flac", "libmp3lame", "libopus", "libvorbis", "srt"]
+[2021-09-09 15:23:09.224 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["vdpau", "cuda", "vaapi", "qsv", "drm", "opencl"]
+[2021-09-09 15:23:09.224 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: SetByArgument: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2021-09-09 15:23:09.225 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "06ea9338fc5e4786a65ba490615cbbc1"
+[2021-09-09 15:23:09.282 +02:00] [INF] [1] Emby.Dlna.Main.DlnaEntryPoint: Registering publisher for "urn:schemas-upnp-org:device:MediaServer:1" on "192.168.178.35/24"
+[2021-09-09 15:23:09.292 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.0612047
+[2021-09-09 15:23:09.292 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2021-09-09 15:23:09.397 +02:00] [INF] [15] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/movies
+[2021-09-09 15:23:09.397 +02:00] [INF] [10] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/shows
+[2021-09-09 15:23:09.399 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.1069143
+[2021-09-09 15:23:09.399 +02:00] [INF] [1] Main: Startup complete 0:00:01.6233003
+[2021-09-09 15:23:12.173 +02:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2021-09-09 15:23:12.174 +02:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2021-09-09 15:23:12.177 +02:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2021-09-09 15:23:12.780 +02:00] [INF] [5] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2021-09-09 15:23:12.811 +02:00] [INF] [5] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 15:24:59.231 +02:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2021-09-09 15:24:59.232 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2021-09-09 15:24:59.232 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2021-09-09 15:24:59.232 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-09-09 15:24:59.233 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2021-09-09 15:24:59.233 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2021-09-09 15:24:59.233 +02:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2021-09-09 15:24:59.235 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2021-09-09 15:24:59.235 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2021-09-09 15:24:59.236 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2021-09-09 15:24:59.237 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2021-09-09 15:24:59.237 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2021-09-09 15:24:59.237 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpDevicePublisher
+[2021-09-09 15:24:59.340 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2021-09-09 15:24:59.341 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2021-09-09 15:24:59.341 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2021-09-09 15:24:59.341 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2021-09-09 15:24:59.342 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 2 sendSockets
+[2021-09-09 15:24:59.342 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2021-09-09 15:24:59.342 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "192.168.178.35"
+[2021-09-09 15:24:59.342 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2021-09-09 15:24:59.342 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-09-09 15:24:59.343 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"
+[2021-09-09 15:27:25.798 +02:00] [INF] [1] Main: Jellyfin version: "10.7.6"
+[2021-09-09 15:27:25.810 +02:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]"]
+[2021-09-09 15:27:25.812 +02:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg", "--webdir=/usr/share/jellyfin/web"]
+[2021-09-09 15:27:25.812 +02:00] [INF] [1] Main: Operating system: "Linux"
+[2021-09-09 15:27:25.812 +02:00] [INF] [1] Main: Architecture: X64
+[2021-09-09 15:27:25.813 +02:00] [INF] [1] Main: 64-Bit Process: True
+[2021-09-09 15:27:25.813 +02:00] [INF] [1] Main: User Interactive: True
+[2021-09-09 15:27:25.813 +02:00] [INF] [1] Main: Processor count: 12
+[2021-09-09 15:27:25.813 +02:00] [INF] [1] Main: Program data path: "/config/data"
+[2021-09-09 15:27:25.813 +02:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2021-09-09 15:27:25.813 +02:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2021-09-09 15:27:25.916 +02:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2021-09-09 15:27:25.942 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-09 15:27:25.942 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2021-09-09 15:27:25.942 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2021-09-09 15:27:25.947 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2021-09-09 15:27:25.947 +02:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2021-09-09 15:27:25.957 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2021-09-09 15:27:26.838 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.7.6.0"
+[2021-09-09 15:27:26.838 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.7.6.0"
+[2021-09-09 15:27:26.838 +02:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.7.6.0"
+[2021-09-09 15:27:26.878 +02:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2021-09-09 15:27:27.058 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2021-09-09 15:27:27.058 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2021-09-09 15:27:27.064 +02:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {7c55e58f-138e-4e79-868d-3aae136fa686} may be persisted to storage in unencrypted form.
+[2021-09-09 15:27:27.082 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2021-09-09 15:27:27.123 +02:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 09/10/2021 02:00, which is 10:32:32.8769438 from now.
+[2021-09-09 15:27:27.150 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "4.3.1"
+[2021-09-09 15:27:27.163 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8_cuvid", "vp8_qsv", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "flac", "mp3"]
+[2021-09-09 15:27:27.169 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "ac3", "flac", "libmp3lame", "libopus", "libvorbis", "srt"]
+[2021-09-09 15:27:27.175 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["vdpau", "cuda", "vaapi", "qsv", "drm", "opencl"]
+[2021-09-09 15:27:27.176 +02:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: SetByArgument: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2021-09-09 15:27:27.176 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "06ea9338fc5e4786a65ba490615cbbc1"
+[2021-09-09 15:27:27.234 +02:00] [INF] [1] Emby.Dlna.Main.DlnaEntryPoint: Registering publisher for "urn:schemas-upnp-org:device:MediaServer:1" on "192.168.178.35/24"
+[2021-09-09 15:27:27.244 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.0622973
+[2021-09-09 15:27:27.244 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2021-09-09 15:27:27.350 +02:00] [INF] [18] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/movies
+[2021-09-09 15:27:27.350 +02:00] [INF] [11] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /media/shows
+[2021-09-09 15:27:27.352 +02:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.1079948
+[2021-09-09 15:27:27.352 +02:00] [INF] [1] Main: Startup complete 0:00:01.6394578
+[2021-09-09 15:27:30.127 +02:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2021-09-09 15:27:30.128 +02:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2021-09-09 15:27:30.131 +02:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2021-09-09 15:27:30.760 +02:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2021-09-09 15:27:30.791 +02:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 15:29:19.077 +02:00] [INF] [31] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.178.38" request
+[2021-09-09 15:33:07.352 +02:00] [INF] [59] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2021-09-09 15:33:19.354 +02:00] [INF] [61] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2021-09-09 15:33:31.355 +02:00] [INF] [62] Emby.Server.Implementations.Session.SessionWebSocketListener: Lost 1 WebSockets.
+[2021-09-09 15:34:41.719 +02:00] [INF] [64] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Download missing subtitles"
+[2021-09-09 15:34:41.719 +02:00] [INF] [64] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "SubtitleScheduledTask"
+[2021-09-09 15:34:41.719 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Download missing subtitles"
+[2021-09-09 15:34:41.725 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing subtitles" Completed after 0 minute(s) and 0 seconds
+[2021-09-09 15:34:41.726 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 15:34:41.777 +02:00] [INF] [64] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Log Directory"
+[2021-09-09 15:34:41.777 +02:00] [INF] [66] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Transcode Directory"
+[2021-09-09 15:34:41.777 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Cache Directory"
+[2021-09-09 15:34:41.777 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteCacheFileTask"
+[2021-09-09 15:34:41.777 +02:00] [INF] [64] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteLogFileTask"
+[2021-09-09 15:34:41.777 +02:00] [INF] [23] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "TasksRefreshChannels"
+[2021-09-09 15:34:41.777 +02:00] [INF] [66] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteTranscodeFileTask"
+[2021-09-09 15:34:41.777 +02:00] [INF] [23] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshChannelsScheduledTask"
+[2021-09-09 15:34:41.777 +02:00] [INF] [64] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Log Directory"
+[2021-09-09 15:34:41.777 +02:00] [INF] [66] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "TasksRefreshChannels"
+[2021-09-09 15:34:41.777 +02:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Transcode Directory"
+[2021-09-09 15:34:41.777 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Cache Directory"
+[2021-09-09 15:34:41.779 +02:00] [INF] [64] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Log Directory" Completed after 0 minute(s) and 0 seconds
+[2021-09-09 15:34:41.779 +02:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2021-09-09 15:34:41.780 +02:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 15:34:41.780 +02:00] [INF] [64] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 15:34:41.795 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Cache Directory" Completed after 0 minute(s) and 0 seconds
+[2021-09-09 15:34:41.795 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 15:34:41.808 +02:00] [INF] [66] Emby.Server.Implementations.ScheduledTasks.TaskManager: "TasksRefreshChannels" Completed after 0 minute(s) and 0 seconds
+[2021-09-09 15:34:41.808 +02:00] [INF] [66] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 15:34:44.843 +02:00] [INF] [66] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Refresh Guide"
+[2021-09-09 15:34:44.843 +02:00] [INF] [66] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshChannelsScheduledTask"
+[2021-09-09 15:34:44.843 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Refresh Guide"
+[2021-09-09 15:34:47.889 +02:00] [INF] [67] Emby.Server.Implementations.LiveTv.LiveTvManager: Refreshing guide with 7 days of guide data
+[2021-09-09 15:34:47.897 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Guide" Completed after 0 minute(s) and 3 seconds
+[2021-09-09 15:34:47.898 +02:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-09-09 16:35:33.455 +02:00] [WRN] [216] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "192.168.178.38" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2021-09-09 16:35:33.473 +02:00] [INF] [216] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.178.38" closed
+[2021-09-09 16:36:37.201 +02:00] [INF] [225] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.178.38" request
+[2021-09-09 16:36:38.268 +02:00] [WRN] [228] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "192.168.178.38" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2021-09-09 16:36:38.279 +02:00] [INF] [228] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.178.38" closed
+[2021-09-09 17:51:37.704 +02:00] [INF] [182] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "jellyfin" has succeeded.
+[2021-09-09 17:51:37.704 +02:00] [INF] [182] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "jellyfin": 0/0
+[2021-09-09 17:51:37.706 +02:00] [INF] [182] Emby.Server.Implementations.Session.SessionManager: Reissuing access token: "0daa7a77927c4ac99522e69742fa28bc"
+[2021-09-09 17:51:37.707 +02:00] [ERR] [182] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "POST" "/Users/AuthenticateByName".
+System.ArgumentNullException: Value cannot be null. (Parameter 'appName')
+   at Emby.Server.Implementations.Session.SessionManager.LogSessionActivity(String appName, String appVersion, String deviceId, String deviceName, String remoteEndPoint, User user)
+   at Emby.Server.Implementations.Session.SessionManager.AuthenticateNewSessionInternal(AuthenticationRequest request, Boolean enforcePassword)
+   at Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(AuthenticateUserByName request)
+   at lambda_method841(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 17:52:43.922 +02:00] [INF] [179] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "jellyfin" has succeeded.
+[2021-09-09 17:52:43.922 +02:00] [INF] [179] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "jellyfin": 0/0
+[2021-09-09 17:52:43.922 +02:00] [INF] [179] Emby.Server.Implementations.Session.SessionManager: Reissuing access token: "0daa7a77927c4ac99522e69742fa28bc"
+[2021-09-09 17:52:43.923 +02:00] [ERR] [179] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "POST" "/Users/AuthenticateByName".
+System.ArgumentNullException: Value cannot be null. (Parameter 'appName')
+   at Emby.Server.Implementations.Session.SessionManager.LogSessionActivity(String appName, String appVersion, String deviceId, String deviceName, String remoteEndPoint, User user)
+   at Emby.Server.Implementations.Session.SessionManager.AuthenticateNewSessionInternal(AuthenticationRequest request, Boolean enforcePassword)
+   at Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(AuthenticateUserByName request)
+   at lambda_method841(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 17:58:36.783 +02:00] [INF] [16] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "jellyfin" has succeeded.
+[2021-09-09 17:58:36.783 +02:00] [INF] [16] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "jellyfin": 0/0
+[2021-09-09 17:58:36.783 +02:00] [INF] [16] Emby.Server.Implementations.Session.SessionManager: Creating new access token for user 4e6d91b7-e219-48f9-8774-b871871c5ff5
+[2021-09-09 17:58:36.785 +02:00] [ERR] [16] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "POST" "/Users/AuthenticateByName".
+Constraint: SQLitePCL.pretty.SQLiteException: NOT NULL constraint failed: Tokens.AppVersion
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at Emby.Server.Implementations.Security.AuthenticationRepository.<>c__DisplayClass3_0.<Create>b__0(IDatabaseConnection db)
+   at SQLitePCL.pretty.DatabaseConnection.<>c__DisplayClass20_0.<RunInTransaction>b__0(IDatabaseConnection db)
+   at SQLitePCL.pretty.DatabaseConnection.RunInTransaction[T](IDatabaseConnection This, Func`2 f, TransactionMode mode)
+   at SQLitePCL.pretty.DatabaseConnection.RunInTransaction(IDatabaseConnection This, Action`1 action, TransactionMode mode)
+   at Emby.Server.Implementations.Security.AuthenticationRepository.Create(AuthenticationInfo info)
+   at Emby.Server.Implementations.Session.SessionManager.GetAuthorizationToken(User user, String deviceId, String app, String appVersion, String deviceName)
+   at Emby.Server.Implementations.Session.SessionManager.AuthenticateNewSessionInternal(AuthenticationRequest request, Boolean enforcePassword)
+   at Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(AuthenticateUserByName request)
+   at lambda_method841(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 17:59:20.885 +02:00] [INF] [5] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "jellyfin" has succeeded.
+[2021-09-09 17:59:20.885 +02:00] [INF] [5] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "jellyfin": 0/0
+[2021-09-09 17:59:20.885 +02:00] [INF] [5] Emby.Server.Implementations.Session.SessionManager: Creating new access token for user 4e6d91b7-e219-48f9-8774-b871871c5ff5
+[2021-09-09 17:59:20.886 +02:00] [ERR] [5] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "POST" "/Users/AuthenticateByName".
+Constraint: SQLitePCL.pretty.SQLiteException: NOT NULL constraint failed: Tokens.AppVersion
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at Emby.Server.Implementations.Security.AuthenticationRepository.<>c__DisplayClass3_0.<Create>b__0(IDatabaseConnection db)
+   at SQLitePCL.pretty.DatabaseConnection.<>c__DisplayClass20_0.<RunInTransaction>b__0(IDatabaseConnection db)
+   at SQLitePCL.pretty.DatabaseConnection.RunInTransaction[T](IDatabaseConnection This, Func`2 f, TransactionMode mode)
+   at SQLitePCL.pretty.DatabaseConnection.RunInTransaction(IDatabaseConnection This, Action`1 action, TransactionMode mode)
+   at Emby.Server.Implementations.Security.AuthenticationRepository.Create(AuthenticationInfo info)
+   at Emby.Server.Implementations.Session.SessionManager.GetAuthorizationToken(User user, String deviceId, String app, String appVersion, String deviceName)
+   at Emby.Server.Implementations.Session.SessionManager.AuthenticateNewSessionInternal(AuthenticationRequest request, Boolean enforcePassword)
+   at Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(AuthenticateUserByName request)
+   at lambda_method841(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 17:59:56.892 +02:00] [INF] [68] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.178.38" request
+[2021-09-09 18:00:02.451 +02:00] [WRN] [24] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "192.168.178.38" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2021-09-09 18:00:02.463 +02:00] [INF] [24] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.178.38" closed
+[2021-09-09 18:00:09.219 +02:00] [INF] [69] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.178.38" request
+[2021-09-09 18:00:31.119 +02:00] [ERR] [74] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "POST" "/Users/New".
+System.ArgumentException: Usernames can contain unicode symbols, numbers (0-9), dashes (-), underscores (_), apostrophes ('), and periods (.) (Parameter 'name')
+   at Jellyfin.Server.Implementations.Users.UserManager.ThrowIfInvalidUsername(String name)
+   at Jellyfin.Server.Implementations.Users.UserManager.CreateUserAsync(String name)
+   at Jellyfin.Api.Controllers.UserController.CreateUserByName(CreateUserByName request)
+   at lambda_method875(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 18:00:34.006 +02:00] [ERR] [21] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "POST" "/Users/New".
+System.ArgumentException: Usernames can contain unicode symbols, numbers (0-9), dashes (-), underscores (_), apostrophes ('), and periods (.) (Parameter 'name')
+   at Jellyfin.Server.Implementations.Users.UserManager.ThrowIfInvalidUsername(String name)
+   at Jellyfin.Server.Implementations.Users.UserManager.CreateUserAsync(String name)
+   at Jellyfin.Api.Controllers.UserController.CreateUserByName(CreateUserByName request)
+   at lambda_method875(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 18:03:24.548 +02:00] [ERR] [17] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "GET" "/Users/aeed0c89a1864e7bb318100083099634/Images/profile".
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Jellyfin.Api.Controllers.ImageController.GetUserImage(Guid userId, ImageType imageType, String tag, Nullable`1 format, Nullable`1 maxWidth, Nullable`1 maxHeight, Nullable`1 percentPlayed, Nullable`1 unplayedCount, Nullable`1 width, Nullable`1 height, Nullable`1 quality, Nullable`1 fillWidth, Nullable`1 fillHeight, Nullable`1 cropWhitespace, Nullable`1 addPlayedIndicator, Nullable`1 blur, String backgroundColor, String foregroundLayer, Nullable`1 imageIndex)
+   at lambda_method951(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 18:03:24.548 +02:00] [ERR] [26] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "GET" "/Users/d4253398c0c1489fae98a4ef0a23dc4f/Images/profile".
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Jellyfin.Api.Controllers.ImageController.GetUserImage(Guid userId, ImageType imageType, String tag, Nullable`1 format, Nullable`1 maxWidth, Nullable`1 maxHeight, Nullable`1 percentPlayed, Nullable`1 unplayedCount, Nullable`1 width, Nullable`1 height, Nullable`1 quality, Nullable`1 fillWidth, Nullable`1 fillHeight, Nullable`1 cropWhitespace, Nullable`1 addPlayedIndicator, Nullable`1 blur, String backgroundColor, String foregroundLayer, Nullable`1 imageIndex)
+   at lambda_method951(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 18:04:19.824 +02:00] [ERR] [36] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "GET" "/Users/aeed0c89a1864e7bb318100083099634/Images/profile".
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Jellyfin.Api.Controllers.ImageController.GetUserImage(Guid userId, ImageType imageType, String tag, Nullable`1 format, Nullable`1 maxWidth, Nullable`1 maxHeight, Nullable`1 percentPlayed, Nullable`1 unplayedCount, Nullable`1 width, Nullable`1 height, Nullable`1 quality, Nullable`1 fillWidth, Nullable`1 fillHeight, Nullable`1 cropWhitespace, Nullable`1 addPlayedIndicator, Nullable`1 blur, String backgroundColor, String foregroundLayer, Nullable`1 imageIndex)
+   at lambda_method951(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 18:04:19.840 +02:00] [ERR] [36] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "GET" "/Users/d4253398c0c1489fae98a4ef0a23dc4f/Images/profile".
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Jellyfin.Api.Controllers.ImageController.GetUserImage(Guid userId, ImageType imageType, String tag, Nullable`1 format, Nullable`1 maxWidth, Nullable`1 maxHeight, Nullable`1 percentPlayed, Nullable`1 unplayedCount, Nullable`1 width, Nullable`1 height, Nullable`1 quality, Nullable`1 fillWidth, Nullable`1 fillHeight, Nullable`1 cropWhitespace, Nullable`1 addPlayedIndicator, Nullable`1 blur, String backgroundColor, String foregroundLayer, Nullable`1 imageIndex)
+   at lambda_method951(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 18:04:45.260 +02:00] [INF] [16] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2021-09-09 18:04:57.261 +02:00] [INF] [33] Emby.Server.Implementations.Session.SessionWebSocketListener: Lost 1 WebSockets.
+[2021-09-09 18:04:57.566 +02:00] [ERR] [18] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "GET" "/Users/aeed0c89a1864e7bb318100083099634/Images/profile".
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Jellyfin.Api.Controllers.ImageController.GetUserImage(Guid userId, ImageType imageType, String tag, Nullable`1 format, Nullable`1 maxWidth, Nullable`1 maxHeight, Nullable`1 percentPlayed, Nullable`1 unplayedCount, Nullable`1 width, Nullable`1 height, Nullable`1 quality, Nullable`1 fillWidth, Nullable`1 fillHeight, Nullable`1 cropWhitespace, Nullable`1 addPlayedIndicator, Nullable`1 blur, String backgroundColor, String foregroundLayer, Nullable`1 imageIndex)
+   at lambda_method951(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 18:04:57.574 +02:00] [ERR] [18] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "GET" "/Users/d4253398c0c1489fae98a4ef0a23dc4f/Images/profile".
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Jellyfin.Api.Controllers.ImageController.GetUserImage(Guid userId, ImageType imageType, String tag, Nullable`1 format, Nullable`1 maxWidth, Nullable`1 maxHeight, Nullable`1 percentPlayed, Nullable`1 unplayedCount, Nullable`1 width, Nullable`1 height, Nullable`1 quality, Nullable`1 fillWidth, Nullable`1 fillHeight, Nullable`1 cropWhitespace, Nullable`1 addPlayedIndicator, Nullable`1 blur, String backgroundColor, String foregroundLayer, Nullable`1 imageIndex)
+   at lambda_method951(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2021-09-09 18:16:19.604 +02:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2021-09-09 18:16:19.605 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2021-09-09 18:16:19.606 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2021-09-09 18:16:19.606 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-09-09 18:16:19.606 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2021-09-09 18:16:19.606 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2021-09-09 18:16:19.606 +02:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2021-09-09 18:16:19.608 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2021-09-09 18:16:19.609 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2021-09-09 18:16:19.610 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2021-09-09 18:16:19.610 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2021-09-09 18:16:19.610 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2021-09-09 18:16:19.611 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpDevicePublisher
+[2021-09-09 18:16:19.713 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2021-09-09 18:16:19.713 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2021-09-09 18:16:19.713 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2021-09-09 18:16:19.714 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2021-09-09 18:16:19.715 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 2 sendSockets
+[2021-09-09 18:16:19.715 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2021-09-09 18:16:19.715 +02:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "192.168.178.35"
+[2021-09-09 18:16:19.715 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2021-09-09 18:16:19.716 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-09-09 18:16:19.716 +02:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"

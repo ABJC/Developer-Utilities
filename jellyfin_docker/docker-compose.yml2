@@ -1,0 +1,15 @@
+version: "3"
+services:
+  jellyfin:
+    image: linuxserver/jellyfin
+    container_name: jellyfin
+    volumes:
+      - ./config:/config
+      - ./cache:/cache
+      - ./media:/media
+    network_mode: host
+    environment:
+      - PUID=1000         # UserID 
+      - PGID=1000         # GroupID  
+      - TZ=Europe/Berlin  # Timezone
+    restart: "unless-stopped"
