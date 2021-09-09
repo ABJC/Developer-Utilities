@@ -1,5 +1,5 @@
 jellyfin_docker/cache/*
-#jellyfin_docker/config
+jellyfin_docker/config/logs
 #jellyfin_docker/media
 #jellyfin_docker/media2
 
