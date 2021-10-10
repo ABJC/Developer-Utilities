@@ -12,6 +12,7 @@ jobs:
     - uses: actions/cache@v2
       name: Cache
       with:
+        key: ${{ runner.os }}-media
         path: dev_utils/jellyfin_docker/media
         
     - name: "Print DirTree"
