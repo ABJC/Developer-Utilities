@@ -1,0 +1,15 @@
+{
+  "category": "General",
+  "changelog": "changelog\n",
+  "description": "Automatically organize your media",
+  "guid": "70b7b43b-471b-4159-b4be-56750c795499",
+  "name": "Auto Organize",
+  "overview": "Automatically organize your media",
+  "owner": "jellyfin",
+  "targetAbi": "10.7.0.0",
+  "timestamp": "2020-12-05T22:31:12.0000000Z",
+  "version": "9.0.0.0",
+  "status": "Active",
+  "autoUpdate": true,
+  "imagePath": ""
+}
