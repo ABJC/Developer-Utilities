@@ -13,7 +13,7 @@ jobs:
       name: Cache
       with:
         key: ${{ runner.os }}-media
-        path: dev_utils/jellyfin_docker/media
+        path: jellyfin_docker/media
         
     - name: "Print DirTree"
       run: 'find . -type f -name "*.mkv"'
