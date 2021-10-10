@@ -16,7 +16,7 @@ jobs:
         path: dev_utils/jellyfin_docker/media
         
     - name: "Print DirTree"
-      run: "find -f -name '*.mkv'"
+      run: 'find -f -name "*.mkv"'
       
     - name: "Setup Media"
       run: "cd dev_utils/jellyfin_docker; ./setup.sh; cd .."
