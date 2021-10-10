@@ -1,5 +1,6 @@
 # Developer Utilities for ABJC
 
+[![Jellyfin Docker Test](https://github.com/ABJC/Developer-Utilities/actions/workflows/jellyfin_docker_test.yml/badge.svg)](https://github.com/ABJC/Developer-Utilities/actions/workflows/jellyfin_docker_test.yml)
 
 ## Jellyfin Docker Container
 A Docker Container for Jellyfin containing some TV-Shows and Movies for testing purposes.
