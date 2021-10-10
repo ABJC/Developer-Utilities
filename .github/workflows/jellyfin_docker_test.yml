@@ -19,7 +19,7 @@ jobs:
       run: 'find . -type f -name "*.mkv"'
       
     - name: "Setup Media"
-      run: "cd dev_utils/jellyfin_docker; ./setup.sh; cd .."
+      run: "cd jellyfin_docker; ./setup.sh; cd .."
       
     - name: Docker Setup
       uses: docker-practice/actions-setup-docker@1.0.8
