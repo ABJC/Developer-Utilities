@@ -1,8 +1,7 @@
+
+.DS_Store
+
 jellyfin_docker/cache/*
 jellyfin_docker/config/logs
-#jellyfin_docker/media
-#jellyfin_docker/media2
-
-# jellyfin_docker/config/config
-# jellyfin_docker/config/log
-# jellyfin_docker/config/transcodes
+jellyfin_docker/media/*.mkv
+jellyfin_docker/media/*Episode 0*
