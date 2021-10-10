@@ -3,15 +3,26 @@ on:
   push: 
   workflow_dispatch:
 jobs:
-  verify_network:
+  docker_test:
     runs-on: macos-11
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-
+    
+    - uses: actions/cache@v2
+      name: Cache
+      with:
+        path: dev_utils/jellyfin_docker/media
+        
+    - name: "Print DirTree"
+      run: "find -f -name '*.mkv'"
+      
+    - name: "Setup Media"
+      run: "cd dev_utils/jellyfin_docker; ./setup.sh; cd .."
+      
     - name: Docker Setup
       uses: docker-practice/actions-setup-docker@1.0.8
-      
+
     - name: Compose
       run: "sudo docker-compose -f jellyfin_docker/docker-compose.yml up -d"
 
